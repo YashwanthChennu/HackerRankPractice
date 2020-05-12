@@ -1,5 +1,5 @@
 //github/Yashwanth Chennu
-
+//problem Statement :https://www.hackerrank.com/challenges/s10-weighted-mean/problem
 
 #include <stdio.h>
 #include <string.h>
