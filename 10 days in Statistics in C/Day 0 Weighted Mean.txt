@@ -1,0 +1,27 @@
+//github/Yashwanth Chennu
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    float weighted_mean;
+    int i, num, number[100], weight[100], numerator_sum =0, denominator_sum = 0;
+    scanf("%d", &num);
+    for(i = 0; i< num; i ++)
+        scanf("%d", &number[i]);
+    for(i = 0;i < num; i++)
+        scanf("%d", &weight[i]);
+    for(i =0; i< num; i++){
+        numerator_sum += (weight[i] * number[i]);
+        denominator_sum += weight[i];
+
+    } 
+    weighted_mean = (float)numerator_sum / (float)denominator_sum;
+    printf("%.1f", weighted_mean);   
+    return 0;
+}
