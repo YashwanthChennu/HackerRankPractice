@@ -1,0 +1,33 @@
+//Github//Yashwanth Chennu
+
+problem Statement:https://www.hackerrank.com/challenges/s10-standard-deviation/pr
+
+Solution:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    double std_dev = 0, mean=0;
+    int i, *array, size;
+    scanf("%d", &size);
+    array = (int*)malloc(size * sizeof(int));
+    for(i = 0; i < size; i++)
+        scanf("%d", array+i);
+    for(i = 0; i < size; i++)
+        mean += *(array + i);
+    mean = mean / size;
+    
+    for(i =0; i < size; i++){
+        std_dev += pow((*(array + i) - mean), 2);
+
+    }
+    
+    std_dev = sqrt(std_dev / size);
+    printf("%.1lf", std_dev);
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+/github/YashwanthChennnu
+
+Problem Statement:https://www.hackerrank.com/challenges/s10-mcq-1/problem
+
+Solution:
+It was given that a single toss of 2 fair (Evenly weighted) six-sided , we need to find  the probability that their sum will be at most 9.
+
+the total outcomes when two dices are drawn are 36.
+Consider one dice show 1 and another dice may show 1, 2, 3, 4, 5, 6 during one toss so there is a possibility of 6 outcomes
+Consider one dice show 2 and another dice may show 1, 2, 3, 4, 5, 6 during one toss so there is a possibility of 6 outcomes
+Consider one dice show 3 and another dice may show 1, 2, 3, 4, 5, 6 during one toss so there is a possibility of 6 outcomes
+Consider one dice show 4 and another dice may show 1, 2, 3, 4, 5, 6 during one toss so there is a possibility of 6 outcomes
+Consider one dice show 5 and another dice may show 1, 2, 3, 4, 5, 6 during one toss so there is a possibility of 6 outcomes
+Consider one dice show 6 and another dice may show 1, 2, 3, 4, 5, 6 during one toss so there is a possibility of 6 outcomes
+
+
+so the total outcomes will be 36
+
+now according to question we need to find probability of their sum is atmost 9
+all the possibilities except {6,6}, {5,6}, {6,5}, {5,5}, {4,6}, {6, 4} 
+i.e., 36 - 6 = 30
+now the probability of our event is 30/36 = 5/6
+ 
