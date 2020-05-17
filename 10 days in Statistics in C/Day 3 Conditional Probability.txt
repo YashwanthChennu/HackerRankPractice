@@ -1,0 +1,16 @@
+github/yashwanthchennu
+
+Problem Statement: https://www.hackerrank.com/challenges/s10-mcq-4/problem
+
+Statement:
+
+We have the sample space like this {BB, BG, GB, GG}
+given that one of them is Boy but in the questionit wasnt mentioned that 
+the first or second child is boy
+So we need to consider the possible occurence like this
+1. first child may be boy
+2. second child may be boy
+
+so the {BB, BG, GB} satisfy this condition so
+the probability will be 1 outcome of all the 3
+so the P[E] is 1/3
