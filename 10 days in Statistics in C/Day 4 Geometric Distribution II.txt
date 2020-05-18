@@ -1,0 +1,25 @@
+github/yashwanthchennu
+
+Problem Statement: https://www.hackerrank.com/challenges/s10-geometric-distribution-2/problem
+Solution:
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+    
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int i;
+    float numerator, denominator, output = 0;
+    scanf("%f%f", &numerator, &denominator);
+    for(i = 1; i <= 5; i++)
+    output += pow((1- numerator/denominator), i - 1)* (numerator/denominator);
+    printf("%.3f", output);
+    return 0;
+}
+   
+  
