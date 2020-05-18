@@ -1,0 +1,36 @@
+github/yashwanthchennu
+
+problem statement : https://www.hackerrank.com/challenges/s10-binomial-distribution-2/problem
+
+solution: 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int factorial(int num);
+float bionomial(float x, float n, float p);
+int factorial(int num){
+    if (num <= 0)
+        return 1;
+    else
+        return num * factorial(num - 1);
+}
+float bionomial(float x, float n, float p){
+  
+    return factorial(n) / (factorial(n - x) * factorial (x)) * pow(p, x) * pow(1-p, n - x);
+}
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    float output1 = 0, output2 = 0;
+    int defective_percent, size_of_batch, i;
+    scanf("%d%d",&defective_percent, &size_of_batch );
+    for(i = 0; i<= 2; i++){
+        output1 += bionomial(i, size_of_batch, (float)defective_percent / 100);
+    }
+    for(i = 2; i < 10; i++)
+        output2 += bionomial(i, size_of_batch, (float)defective_percent/100);
+    printf("%.3f\n%.3f", output1, output2);
+    return 0;
+}
