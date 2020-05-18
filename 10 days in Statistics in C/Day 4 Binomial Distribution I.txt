@@ -1,0 +1,36 @@
+github/yashwanthchennu
+
+
+problem statement:https://www.hackerrank.com/challenges/s10-binomial-distribution-1/problem
+
+solution:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int factorial(int num);
+float bionomial_distribution(float x,float n,float p);
+int factorial(int num){
+    if (num == 0)
+        return 1;
+    else
+        return num * factorial(num - 1);
+
+}
+float bionomial_distribution(float x,float n,float p){
+
+    
+    return  factorial(n) /(factorial(n - x) * factorial(x)) * pow(p, x) * pow(1-p, n - x); 
+}
+int main() {
+
+    float boys_ratio, girl_ratio, output =0 ;
+    int i ;
+    scanf("%f%f", &boys_ratio, &girl_ratio);
+    for(i = 3; i <= 6; i++)
+        output += bionomial_distribution(i, 6, boys_ratio/(boys_ratio + girl_ratio));
+        
+
+    printf("%.3f", output);
+    return 0;
+}
