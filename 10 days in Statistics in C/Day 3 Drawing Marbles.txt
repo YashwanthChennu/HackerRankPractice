@@ -1,0 +1,10 @@
+github/yashwanthchennu
+
+problem statement: https://www.hackerrank.com/challenges/s10-mcq-6/problem
+solution:
+
+It is already given that one out of two marbles drawn is red
+then selecting one of the blue marble is 4c1 and the total outcomes will
+be 2(red marbles ) + 4 (blue marbles) = 6
+so the probability will be 4c1/6c1 = 2/3
+the solution will be 2/3

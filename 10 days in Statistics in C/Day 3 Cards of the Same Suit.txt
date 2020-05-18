@@ -1,0 +1,12 @@
+github/yashwanthchennu
+
+Problem Statement: https://www.hackerrank.com/challenges/s10-mcq-5/problem
+solution:
+
+It is stated that we need to draw two cards from same suit
+so we can take any card of any suit that means we need to select 
+one card out of 52 cards so it is 52/52 = 1
+and second card should be of same suit but we have already taken one card 
+of that suit so another card will be 1 out of 12 and total outcomes will be
+1 out of 51 i.e., 12c1/51c1
+so the answer will be 1 * 12/51 i.e, 12/51 
